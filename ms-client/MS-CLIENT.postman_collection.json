@@ -56,6 +56,58 @@
 					"response": []
 				}
 			]
+		},
+		{
+			"name": "Agency",
+			"item": [
+				{
+					"name": "Create an Agency",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Agencia Lima Sur\",\r\n  \"description\": \"Agencia de Lima Sur\",\r\n  \"abbreviation\": \"LIMA-SUR\",\r\n  \"registrationStatus\": 1,\r\n  \"insertionDate\": \"2022-04-10T14:08:25.956Z\",\r\n  \"fk_insertionUser\": \"sluismen\",\r\n  \"insertionTerminal\": \"LIM-GQRY1J3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/agency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"agency"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Agencies",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/agency",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"agency"
+							]
+						}
+					},
+					"response": []
+				}
+			]
 		}
 	]
 }
