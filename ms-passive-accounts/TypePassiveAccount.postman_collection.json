@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "186baadf-4820-440d-8899-d71bb8548a6e",
+		"name": "TypePassiveAccount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/typePassiveProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/typePassiveProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"typePassiveProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/typePassiveProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"description\": \"test\",\r\n    \"abbreviation\": \"test\",\r\n    \"movementLimitIndicator\": \"S\",\r\n    \"maximunMovements\": 2,\r\n    \"maintenanceCommission\": 2.5,\r\n\t\"audit\": {\r\n        \"registrationStatus\": \"S\",\r\n        \"creationUser\": \"Pepe\",\r\n        \"creationDate\": \"2012-04-23T18:25:43.511Z\",\r\n        \"creationTerminal\": \"0.0.0.0\" ,\r\n        \"modificationUser\": \"\",\r\n        \"modificationDate\": \"\",\r\n        \"modificationTerminal\":\"\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/typePassiveProduct",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"typePassiveProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/typePassiveProduct/62548dabcd9f9567b5aa15c2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"test1\",\r\n    \"abbreviation\": \"test\",\r\n    \"movementLimitIndicator\": \"S\",\r\n    \"maximunMovements\": 3,\r\n    \"maintenanceCommission\": 3.5,\r\n    \"audit\": {\r\n        \"modificationUser\": \"Juan\",\r\n        \"modificationDate\": \"2012-04-23T18:25:43.511+00:00\",\r\n        \"modificationTerminal\": \"0.0.0.0\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/typePassiveProduct/62548dabcd9f9567b5aa15c2",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"typePassiveProduct",
+						"62548dabcd9f9567b5aa15c2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/typePassiveProduct/6256e4b792d2e061b28ecf8a",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/typePassiveProduct/6256e4b792d2e061b28ecf8a",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"typePassiveProduct",
+						"6256e4b792d2e061b28ecf8a"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
